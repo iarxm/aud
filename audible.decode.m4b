@@ -1,0 +1,14 @@
+#!/bin/bash
+ls=$(find . -maxdepth 1 -name '*.aax' -printf '%f\n')
+
+for aud in $ls; do
+    AAXtoMP3 \
+	--authcode 82767106 \
+	--no-clobber \
+	-e:m4b \
+	--chaptered \
+	"$aud"
+    mv $aud zdone/$aud
+done
+
+#--aac \

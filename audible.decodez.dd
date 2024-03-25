@@ -1,0 +1,13 @@
+# audible ======================
+I will delete the aax files because if necessary in the future - i can always redownload them from amazon servers..
+.I used m4b
+.. designed for audiobooks
+.. supports bmarks apparently
+.. flac is large and time consuming
+
+# prg =======================
+# bash required
+# flac,m4a or m4b required for chapteres
+# flac is lossless so --level 12 is suitable..
+# validate files first with AAXtoMP3 --validate..
+# authcode saved in pass.. - recieved using 'audible-activator'

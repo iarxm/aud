@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# convert csv (radio name),(url) file structure to (radio name).m3u file name with url inside
+
+rm /tmp/ls1
+[[ ! -f /tmp/ls2 ]] thn rm /tmp/ls2
+< $1 | cut -d ',' -f1 >> /tmp/ls1
+< $1 | cut -d ',' -f2 > /tmp/ls2
+cat /tmp/ls1
+cat /tmp/ls2
+#echo $b
+#list=$(cat $1)
+#echo $list 
+#cut -d ',' -f2
+
+
+for b in $1; do
+echo $b
+#name=`echo $b | cut -d ',' -f2`
+#echo $name
+done
+
